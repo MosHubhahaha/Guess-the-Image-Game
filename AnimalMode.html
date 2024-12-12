@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Image Game</title>
+    <link rel="stylesheet" href="AnimalMode.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="image">
+          <img id="image" src="" alt="Image">
+        </div>
+        <div class="control">
+          <h1 style="color:#fff;text-shadow: -2px -2px 0 #000, -2px -1px 0 #000">What is this?</h1>
+          <input type="text" id="answer" placeholder="Enter your guess here..." />
+          <div class="btn">
+            <button onclick="checkAnswer()">Submit Answer</button>
+            <button class="next-button" onclick="nextImage()">Next Image</button>
+          </div>
+          <div class="result" id="result"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-result">
+                <p>You completed the game guesses!</p>
+                <button onclick="location.href='./Fontpage.html'" class="back-page">กลับหน้าแรก</button>
+            </div>
+        </div>
+    </div>
+    <script src="AnimalMode.js"></script>
+  </body>
+</html>
